@@ -6,9 +6,16 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "preview:cf": "yarn build:cf && npx miniflare .output/server/index.mjs --site .output/public"
+    "preview:cf": "yarn build:cf && npx miniflare .output/server/index.mjs --site .output/public",
+    "deploy": "npx wrangler publish"
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.3"
+  },
+  "dependencies": {
+    "@fontsource/quicksand": "^4.5.9",
+    "@unocss/nuxt": "^0.33.2",
+    "augmented-ui": "^2.0.0",
+    "stylus": "^0.57.0"
   }
 }

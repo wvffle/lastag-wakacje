@@ -4,5 +4,16 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   typescript: {
     shim: false
-  }
+  },
+
+  modules: [
+    '@unocss/nuxt',
+  ],
+
+  css: [
+    'augmented-ui',
+    '@fontsource/quicksand/500.css',
+    '@fontsource/quicksand/700.css',
+    '~/assets/css/main.styl'
+  ]
 })
