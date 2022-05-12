@@ -13,7 +13,7 @@ onMounted(() => {
 
 <template>
   <div class="text-gray-700 overflow-x-hidden">
-    <header class="h-[140vh] md:min-h-screen relative bg-[#04c1f1]">
+    <header class="h-[140vh] md:h-screen relative bg-[#04c1f1]">
       <div data-aos="fade-up" class="absolute top-[calc(120vh-24rem)] md:top-[calc(100vh-24rem)] h-screen w-full bg-[#fce784]">
         <img data-aos="fade-down" data-aos-delay="1000" src="/palm-1.webp" class="absolute bottom-1/1 h-64 left-2/4 -transform-x-1/2" />
         <img data-aos="fade-down" data-aos-delay="900" src="/palm-2.webp" class="absolute bottom-1/1 h-64 left-1/4 -transform-x-1/2" />

@@ -16,18 +16,26 @@ const selected = ref(crew[0])
     <template v-for="member, i in crew" :key="member.name">
       <crew-member
         @click="selected = member"
-        :class="['relative cursor-pointer opacity-80 hover:opacity-100 duration-200', selected === member && '!opacity-100', i < 3 && '-translate-x-6 lg:translate-x-0', i === 1 && '-translate-y-3 lg:translate-y-0', i === 4 && 'translate-y-3 lg:translate-y-0']"
+        :class="[
+          'relative cursor-pointer opacity-80 hover:opacity-100 duration-200', 
+          selected === member && '!opacity-100', 
+          i === 1 && 'sm:-translate-y-5 lg:translate-y-0', 
+          i === 4 && 'sm:translate-y-5 lg:translate-y-0',
+          i % 2 === 1 && 'sm:-top-[40px] sm:mb-[40px]',
+          i !== crew.length + 1 && 'sm:-mr-40px'
+        ]"
         :url="member.url"
         :down="i % 2 === 1"
       />
       <span v-if="i === 2" class="basis-full lg:hidden w-full h-4" />
+      <span v-else class="basis-full sm:hidden w-full h-4" />
     </template>
   </div>
 
   <div class="pb-12">
     <transition name="crew" mode="out-in">
       <div :key="selected.name" class="flex bg-white px-8 rounded-xl shadow-xl">
-        <crew-member :url="selected.url" :down="crew.indexOf(selected) % 2 == 1" :size="250" class="scale-130 -translate-x-14 flex-shrink-0" />
+        <crew-member :url="selected.url" :down="crew.indexOf(selected) % 2 == 1" :size="250" class="scale-130 -translate-x-14 flex-shrink-0 hidden sm:block" />
         <div class="w-full flex items-center py-4 lg:py-0">{{ selected.content }}</div>
       </div>
     </transition>
@@ -35,15 +43,6 @@ const selected = ref(crew[0])
 </template>
 
 <style scoped lang="stylus">
-.crew > .crew__member
-  &:not(:last-child)
-    margin-right -50px
-
-  &:nth-of-type(2n)
-    top -40px
-    margin-bottom 40px
-
-
 .crew-enter-active
 .crew-leave-active
   transition opacity 0.2s ease-out, transform 0.2s ease-out
