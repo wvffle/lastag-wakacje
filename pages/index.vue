@@ -12,9 +12,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="text-gray-700">
-    <header class="min-h-screen relative bg-[#04c1f1]">
-      <div data-aos="fade-up" class="absolute top-[calc(100vh-24rem)] h-screen w-full bg-[#fce784]">
+  <div class="text-gray-700 overflow-x-hidden">
+    <header class="h-[140vh] md:min-h-screen relative bg-[#04c1f1]">
+      <div data-aos="fade-up" class="absolute top-[calc(120vh-24rem)] md:top-[calc(100vh-24rem)] h-screen w-full bg-[#fce784]">
         <img data-aos="fade-down" data-aos-delay="1000" src="/palm-1.webp" class="absolute bottom-1/1 h-64 left-2/4 -transform-x-1/2" />
         <img data-aos="fade-down" data-aos-delay="900" src="/palm-2.webp" class="absolute bottom-1/1 h-64 left-1/4 -transform-x-1/2" />
       </div>
@@ -24,25 +24,25 @@ onMounted(() => {
       <wave data-aos="fade-up" data-aos-delay="800" class="absolute -bottom-20 w-full left-0" />
       <div class="absolute top-[calc(100vh-24rem)] w-full">
         <div data-aos="zoom-out-up" data-aos-delay="1600">
-          <polaroid src="/images/20210707_125226207_iOS.webp" class="w-64 absolute -top-15 right-10 rotate-15" />
+          <polaroid src="/images/20210707_125226207_iOS.webp" class="w-64 absolute top-55 md:-top-15 right-10 rotate-15" />
         </div>
         <div data-aos="zoom-out-up" data-aos-delay="2000">
-          <polaroid src="/images/20210513_150522357_iOS.webp" class="w-64 absolute -top-17 right-70 -rotate-13" />
+          <polaroid src="/images/20210513_150522357_iOS.webp" class="w-64 absolute top-37 md:-top-17 right-70 -rotate-13" />
         </div>
 
         <div data-aos="zoom-out-up" data-aos-delay="1400">
-          <polaroid src="/images/20210510_170617580_iOS.webp" class="w-64 absolute -top-25 left-10 -rotate-3" />
+          <polaroid src="/images/20210510_170617580_iOS.webp" class="w-64 absolute top-74 md:-top-9 xl:-top-25 left-10 -rotate-3" />
         </div>
         <div data-aos="zoom-out-up" data-aos-delay="1800">
-          <polaroid src="/images/20210508_115417299_iOS.webp" class="w-64 absolute -top-15 left-40 rotate-3" />
+          <polaroid src="/images/20210508_115417299_iOS.webp" class="w-64 absolute top-88 md:-top-5 xl:-top-15 left-40 rotate-3" />
         </div>
         <div data-aos="zoom-out-up" data-aos-delay="2200">
-          <polaroid src="/images/20210723_074521080_iOS.webp" class="w-64 absolute top-15 left-20 rotate-8" />
+          <polaroid src="/images/20210723_074521080_iOS.webp" class="w-64 absolute top-95 md:-top-0 xl:top-15 left-20 rotate-8" />
         </div>
       </div>
       <div class="absolute inset-0 h-[calc(100vh-24rem)] flex items-center">
-        <div class="grid grid-cols-2 gap-14 container mx-auto px-8">
-          <div data-aos="fade-right" data-aos-delay="1200" class="text-8xl text-white text-stroke-[1px] font-black">
+        <div class="md:grid grid-cols-2 gap-14 container mx-auto px-8">
+          <div data-aos="fade-right" data-aos-delay="1200" class="text-6xl lg:text-8xl text-white text-center md:text-left py-36 md:py-0 text-stroke-[1px] font-black">
           Poznaj wakacje w LASTAG-u
           </div>
           <div data-aos="fade-left" data-aos-delay="1200" class="flex items-center">
@@ -72,22 +72,22 @@ onMounted(() => {
     </header>
     <div class="relative z-1 bg-[#1a86c7] overflow-x-hidden pt-20">
       <div data-aos="zoom-out-up">
-        <polaroid src="/images/20210813_100705564_iOS.webp" class="w-64 absolute top-75 -z-1 left-0 rotate-18" />
+        <polaroid src="/images/20210813_100705564_iOS.webp" class="w-64 absolute md:top-75 -z-1 left-0 rotate-18" />
       </div>
       <div data-aos="zoom-out-up" data-aos-delay="200">
-        <polaroid src="/images/20210712_102727238_iOS.webp" class="w-64 absolute top-174 -z-1 right-24 -rotate-18" />
+        <polaroid src="/images/20210712_102727238_iOS.webp" class="w-64 absolute md:top-174 -z-1 right-24 -rotate-18" />
       </div>
       <div data-aos="zoom-out-up" data-aos-delay="400">
-        <polaroid src="/images/20210707_123001890_iOS.webp" class="w-64 absolute top-165 -z-1 left-6/9 -rotate-21" />
+        <polaroid src="/images/20210707_123001890_iOS.webp" class="w-64 absolute md:top-165 -z-1 left-6/9 -rotate-21" />
       </div>
       <div data-aos="zoom-out-up" data-aos-delay="600">
-        <polaroid src="/images/20210723_074521080_iOS.webp" class="w-64 absolute top-145 -z-1 right-0 -rotate-8" />
+        <polaroid src="/images/20210723_074521080_iOS.webp" class="w-64 absolute md:top-145 -z-1 right-0 -rotate-8" />
       </div>
       <div data-aos="zoom-out-up" data-aos-delay="800">
-        <polaroid src="/images/20210508_112045693_iOS.webp" class="w-64 absolute top-145 -z-1 right-0 rotate-8" />
+        <polaroid src="/images/20210508_112045693_iOS.webp" class="w-64 absolute md:top-145 -z-1 right-0 rotate-8" />
       </div>
       <div class="container mx-auto px-8 relative">
-        <div class="grid grid-cols-3 gap-8">
+        <div class="md:grid grid-cols-3 gap-8">
           <div data-aos="zoom-out-up" data-aos-delay="100" class="col-span-2 bg-white rounded-md py-4 px-8 shadow-xl text-justify">
             <p class="pb-4 text-lg">
               <span class="text-xl text-center py-4 block">
@@ -124,7 +124,7 @@ onMounted(() => {
             Podejmujesz wyzwanie?
             </div>
           </div>
-          <div data-aos="fade-left" data-aos-delay="300" class="text-white">
+          <div data-aos="fade-left" data-aos-delay="300" class="text-white pt-8 md:pt-0">
             <h3 class="pb-4">W pakiecie:</h3>
             ✔ Bezpieczny wypoczynek, zarejestrowany w Kuratorium Oświaty,<br />
             ✔ Całodzienna opieka i zajęcia pod okiem wysoko wykwalifikowanej kadry, posiadającej odpowiednie
@@ -145,30 +145,32 @@ onMounted(() => {
       <wave fill="#fce784" class="-mb-20 z-1 relative" />
       <div class="bg-[#fce784] z-1 relative">
         <div class="container mx-auto px-8">
-          <h2 class="text-center text-3xl">Programy</h2>
+          <h2 class="text-center text-3xl pb-4 md:pb-0">Programy</h2>
 
-          <div class="flex items-center pb-16">
+          <div class="grid grid-cols-2 md:flex items-center pb-16">
             <div v-for="t in tabs" :key="t" @click="tab = t"
-              class="cursor-pointer bg-white/60 text-gray-700 rounded px-2 py-1 font-bold mr-2 shadow"
+              class="cursor-pointer bg-white/60 text-gray-700 rounded px-2 py-2 md:py-1 font-bold mr-2 shadow"
               :class="[t === tab && '!bg-white !text-[#04c1f1] !shadow-xl']">
               {{ t }}
             </div>
 
-            <div class="ml-auto" />
+            <div class="ml-auto col-span-2 h-8 md:h-0" />
 
             <div class="pr-8 text-2xl">
               Cena: {{ price }} zł
             </div>
-            <a v-if="tab === 'Sportowe Świrusy'" href="https://lastag.pl/produkt/wakacje-2022/">
-              <Button>KUP TERAZ</Button>
-            </a>
-            <a v-if="tab === 'LASTAG Challenge'" href="https://lastag.pl/produkt/wakacje-tajnych-agentow-2022/">
-              <Button>KUP TERAZ</Button>
-            </a>
+            <div class="flex justify-end">
+              <a v-if="tab === 'Sportowe Świrusy'" href="https://lastag.pl/produkt/wakacje-2022/">
+                <Button>KUP TERAZ</Button>
+              </a>
+              <a v-if="tab === 'Lastag Challenge'" href="https://lastag.pl/produkt/wakacje-tajnych-agentow-2022/">
+                <Button>KUP TERAZ</Button>
+              </a>
+            </div>
           </div>
 
-          <div v-if="tab === 'Sportowe Świrusy'" class="grid grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2">
+          <div v-if="tab === 'Sportowe Świrusy'" class="lg:grid grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2 mb-4 lg:mb-0">
               <div class="flex justify-center">
                 <img src="/sportowe-swirusy.webp" class="h-32 -translate-y-20 -mb-16" />
               </div>
@@ -191,7 +193,7 @@ onMounted(() => {
               Dzieci mają ogromną potrzebę ruchu - tylko nie wszystkie po dwóch latach pandemii o tym pamiętają :)<br />
               Spokojnie - my im o tym przypomnimy :)
             </div>
-            <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-2">
+            <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-2 min-h-100">
               <div class="absolute inset-0 overflow-y-scroll p-8">
                 <h4>Dzień 1 (poniedziałek)</h4>
                 <ul class="programme">
@@ -285,8 +287,8 @@ onMounted(() => {
               <polaroid src="/images/20210713_082106015_iOS.webp" class="w-64 -rotate-17" />
             </div>
           </div>
-          <div v-if="tab === 'Lastag Challenge'" class="grid grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2">
+          <div v-if="tab === 'Lastag Challenge'" class="lg:grid grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2 mb-4 lg:mb-0">
               <div class="flex justify-center">
                 <img src="/lastag-challenge.webp" class="h-48 -translate-y-26 -mb-22" />
               </div>
@@ -325,7 +327,7 @@ onMounted(() => {
               Poniżej prezentujemy spis wszystkich wyzwań.<br>
               Każde wyzwanie to niezapomniane wspomnienie dla młodego człowieka.
             </div>
-            <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-2">
+            <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-2 min-h-100">
               <div class="absolute inset-0 overflow-y-scroll p-8">
                 <h4>Dzień 1 (poniedziałek)</h4>
                 <ul class="programme">
