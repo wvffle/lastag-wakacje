@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   css: [
     'reseter.css',
     'augmented-ui',
+    'aos/dist/aos.css',
     '@fontsource/quicksand/500.css',
     '@fontsource/quicksand/700.css',
     '@fontsource/modak',

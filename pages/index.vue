@@ -1,33 +1,51 @@
 <script setup lang="ts">
+import AOS from 'aos'
+
 const tabs = ['Sportowe Świrusy', 'Lastag Challenge']
 const tab = ref(tabs[0])
 
 const price = computed(() => new Date('2022-06-01') > new Date() ? 699 : 750)
+
+onMounted(() => {
+  AOS.init()
+})
 </script>
 
 <template>
   <div class="text-gray-700">
     <header class="min-h-screen relative bg-[#04c1f1]">
-      <div class="absolute top-[calc(100vh-24rem)] h-screen w-full bg-[#fce784]">
-        <img src="/palm-1.webp" class="absolute bottom-1/1 h-64 left-2/4 -transform-x-1/2" />
-        <img src="/palm-2.webp" class="absolute bottom-1/1 h-64 left-1/4 -transform-x-1/2" />
-        <polaroid src="/images/20210707_125226207_iOS.webp" class="w-64 absolute z-2 -top-15 right-10 rotate-15" />
-        <polaroid src="/images/20210513_150522357_iOS.webp" class="w-64 absolute z-2 -top-17 right-70 -rotate-13" />
-
-        <polaroid src="/images/20210510_170617580_iOS.webp" class="w-64 absolute z-2 -top-25 left-10 -rotate-3" />
-        <polaroid src="/images/20210508_115417299_iOS.webp" class="w-64 absolute z-2 -top-15 left-40 rotate-3" />
-        <polaroid src="/images/20210723_074521080_iOS.webp" class="w-64 absolute z-2 top-15 left-20 rotate-8" />
+      <div data-aos="fade-up" class="absolute top-[calc(100vh-24rem)] h-screen w-full bg-[#fce784]">
+        <img data-aos="fade-down" data-aos-delay="1000" src="/palm-1.webp" class="absolute bottom-1/1 h-64 left-2/4 -transform-x-1/2" />
+        <img data-aos="fade-down" data-aos-delay="900" src="/palm-2.webp" class="absolute bottom-1/1 h-64 left-1/4 -transform-x-1/2" />
       </div>
-      <wave fill="#fff" class="absolute bottom-10 w-full left-0" />
-      <wave fill="#1a86c7" class="absolute bottom-0 w-full left-0" />
-      <wave fill="#aed2ef" class="absolute -bottom-10 w-full left-0" />
-      <wave class="absolute -bottom-20 w-full left-0" />
+      <wave data-aos="fade-up" data-aos-delay="200" fill="#fff" class="absolute bottom-10 w-full left-0" />
+      <wave data-aos="fade-up" data-aos-delay="400" fill="#1a86c7" class="absolute bottom-0 w-full left-0" />
+      <wave data-aos="fade-up" data-aos-delay="600" fill="#aed2ef" class="absolute -bottom-10 w-full left-0" />
+      <wave data-aos="fade-up" data-aos-delay="800" class="absolute -bottom-20 w-full left-0" />
+      <div class="absolute top-[calc(100vh-24rem)] w-full">
+        <div data-aos="zoom-out-up" data-aos-delay="1600">
+          <polaroid src="/images/20210707_125226207_iOS.webp" class="w-64 absolute -top-15 right-10 rotate-15" />
+        </div>
+        <div data-aos="zoom-out-up" data-aos-delay="2000">
+          <polaroid src="/images/20210513_150522357_iOS.webp" class="w-64 absolute -top-17 right-70 -rotate-13" />
+        </div>
+
+        <div data-aos="zoom-out-up" data-aos-delay="1400">
+          <polaroid src="/images/20210510_170617580_iOS.webp" class="w-64 absolute -top-25 left-10 -rotate-3" />
+        </div>
+        <div data-aos="zoom-out-up" data-aos-delay="1800">
+          <polaroid src="/images/20210508_115417299_iOS.webp" class="w-64 absolute -top-15 left-40 rotate-3" />
+        </div>
+        <div data-aos="zoom-out-up" data-aos-delay="2200">
+          <polaroid src="/images/20210723_074521080_iOS.webp" class="w-64 absolute top-15 left-20 rotate-8" />
+        </div>
+      </div>
       <div class="absolute inset-0 h-[calc(100vh-24rem)] flex items-center">
         <div class="grid grid-cols-2 gap-14 container mx-auto px-8">
-          <div class="text-8xl text-white text-stroke-[1px] font-black">
+          <div data-aos="fade-right" data-aos-delay="1200" class="text-8xl text-white text-stroke-[1px] font-black">
           Poznaj wakacje w LASTAG-u
           </div>
-          <div class="flex items-center">
+          <div data-aos="fade-left" data-aos-delay="1200" class="flex items-center">
             <div class="relative w-full">
               <div class="absolute transform rotate-6 rounded-md bg-[#1a86c7] w-full h-full shadow" />
               <div class="absolute transform rotate-3 rounded-md bg-[#fce784] w-full h-full shadow" />
@@ -42,8 +60,8 @@ const price = computed(() => new Date('2022-06-01') > new Date() ? 699 : 750)
         </div>
       </div>
 
-      <div class="absolute bottom-0 w-full text-xs text-white flex flex-col items-center">
-        <svg viewBox="0 0 60 72" class="arrows h-16">
+      <div data-aos="fade-down" data-aos-delay="2400" data-aos-anchor-placement="top-bottom" class="absolute bottom-4 w-full text-xs text-white flex flex-col items-center">
+        <svg viewBox="0 0 60 72" class="arrows h-16 mb-2">
           <path stroke="#fff" fill="none" stroke-width="2" d="M0 0 L30 32 L60 0"></path>
           <path stroke="#fff" fill="none" stroke-width="2" d="M0 20 L30 52 L60 20"></path>
           <path stroke="#fff" fill="none" stroke-width="2" d="M0 40 L30 72 L60 40"></path>
@@ -53,16 +71,24 @@ const price = computed(() => new Date('2022-06-01') > new Date() ? 699 : 750)
       </div>
     </header>
     <div class="relative z-1 bg-[#1a86c7] overflow-x-hidden pt-20">
-      <polaroid src="/images/20210813_100705564_iOS.webp" class="w-64 absolute top-75 -z-1 left-0 rotate-18" />
-
-      <polaroid src="/images/20210712_102727238_iOS.webp" class="w-64 absolute top-174 -z-1 right-24 -rotate-18" />
-      <polaroid src="/images/20210707_123001890_iOS.webp" class="w-64 absolute top-165 -z-1 left-6/9 -rotate-21" />
-
-      <polaroid src="/images/20210723_074521080_iOS.webp" class="w-64 absolute top-145 -z-1 right-0 -rotate-8" />
-      <polaroid src="/images/20210508_112045693_iOS.webp" class="w-64 absolute top-145 -z-1 right-0 rotate-8" />
+      <div data-aos="zoom-out-up">
+        <polaroid src="/images/20210813_100705564_iOS.webp" class="w-64 absolute top-75 -z-1 left-0 rotate-18" />
+      </div>
+      <div data-aos="zoom-out-up" data-aos-delay="200">
+        <polaroid src="/images/20210712_102727238_iOS.webp" class="w-64 absolute top-174 -z-1 right-24 -rotate-18" />
+      </div>
+      <div data-aos="zoom-out-up" data-aos-delay="400">
+        <polaroid src="/images/20210707_123001890_iOS.webp" class="w-64 absolute top-165 -z-1 left-6/9 -rotate-21" />
+      </div>
+      <div data-aos="zoom-out-up" data-aos-delay="600">
+        <polaroid src="/images/20210723_074521080_iOS.webp" class="w-64 absolute top-145 -z-1 right-0 -rotate-8" />
+      </div>
+      <div data-aos="zoom-out-up" data-aos-delay="800">
+        <polaroid src="/images/20210508_112045693_iOS.webp" class="w-64 absolute top-145 -z-1 right-0 rotate-8" />
+      </div>
       <div class="container mx-auto px-8 relative">
         <div class="grid grid-cols-3 gap-8">
-          <div class="col-span-2 bg-white rounded-md py-4 px-8 shadow-xl text-justify">
+          <div data-aos="zoom-out-up" data-aos-delay="100" class="col-span-2 bg-white rounded-md py-4 px-8 shadow-xl text-justify">
             <p class="pb-4 text-lg">
               <span class="text-xl text-center py-4 block">
                 W Białymstoku zjawili się super niebezpieczni osobnicy i zagrażają bezpieczeństwu całego kraju! 
@@ -98,7 +124,7 @@ const price = computed(() => new Date('2022-06-01') > new Date() ? 699 : 750)
             Podejmujesz wyzwanie?
             </div>
           </div>
-          <div class="text-white">
+          <div data-aos="fade-left" data-aos-delay="300" class="text-white">
             <h3 class="pb-4">W pakiecie:</h3>
             ✔ Bezpieczny wypoczynek, zarejestrowany w Kuratorium Oświaty,<br />
             ✔ Całodzienna opieka i zajęcia pod okiem wysoko wykwalifikowanej kadry, posiadającej odpowiednie
@@ -116,8 +142,8 @@ const price = computed(() => new Date('2022-06-01') > new Date() ? 699 : 750)
 
       </div>
 
-      <wave fill="#fce784" class="-mb-20" />
-      <div class="bg-[#fce784]">
+      <wave fill="#fce784" class="-mb-20 z-1 relative" />
+      <div class="bg-[#fce784] z-1 relative">
         <div class="container mx-auto px-8">
           <h2 class="text-center text-3xl">Programy</h2>
 
