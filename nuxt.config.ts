@@ -11,9 +11,11 @@ export default defineNuxtConfig({
   ],
 
   css: [
+    'reseter.css',
     'augmented-ui',
     '@fontsource/quicksand/500.css',
     '@fontsource/quicksand/700.css',
+    '@fontsource/modak',
     '~/assets/css/main.styl'
   ]
 })

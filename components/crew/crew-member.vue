@@ -1,10 +1,15 @@
 <script setup lang="ts">
 interface Props {
   url: string
-  down: boolean
+  down?: boolean
+  size?: number
 }
 
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  down: false,
+  size: 200
+})
+
 const augmented = computed(() => [props.down ? 'all-hexangle-down' : 'all-hexangle-up', 'border'].join(' '))
 </script>
 
@@ -12,7 +17,7 @@ const augmented = computed(() => [props.down ? 'all-hexangle-down' : 'all-hexang
   <div
     :data-augmented-ui="augmented"
     class="crew__member"
-    style="--aug-all-width: 200px; --aug-border-bg: #fce784"
+    :style="`--aug-all-width: ${size}px; --aug-border-bg: #04c1f1`"
   >
     <div class="h-full w-full bg-cover bg-center" :style="{ backgroundImage: `url(${url})` }" />
   </div>

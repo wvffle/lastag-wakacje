@@ -290,6 +290,11 @@
   dependencies:
     mime "^3.0.0"
 
+"@fontsource/modak@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/modak/-/modak-4.5.9.tgz#6da71dfa47f7201c9d05524b1a35eb3a5fe17563"
+  integrity sha512-nIGyYM108f98Ce4hlRMvRtiTFyCHthyJrFFPaLWhXj0O19ptwfLGiDz+4nFfO8+iKgHmQ7GIIKO1xHJ4t2KTrg==
+
 "@fontsource/quicksand@^4.5.9":
   version "4.5.9"
   resolved "https://registry.yarnpkg.com/@fontsource/quicksand/-/quicksand-4.5.9.tgz#48f3a2bf5a46690c67549f6023581538156264d3"
@@ -3861,6 +3866,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+reseter.css@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/reseter.css/-/reseter.css-2.0.0.tgz#6832a057d14a8ad3e9e578a8bebf3c4279a4cae5"
+  integrity sha512-u98r3v0drXwxwRFhBywZOk+9LWoNVMy+tSClR6wJG+XXbrR/fpuuzbWQ8N5Uxczp3xMUX86E4PCWzitzsZ5GOg==
 
 resolve-from@^5.0.0:
   version "5.0.0"

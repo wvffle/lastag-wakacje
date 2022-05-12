@@ -13,9 +13,11 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
+    "@fontsource/modak": "^4.5.9",
     "@fontsource/quicksand": "^4.5.9",
     "@unocss/nuxt": "^0.33.2",
     "augmented-ui": "^2.0.0",
+    "reseter.css": "^2.0.0",
     "stylus": "^0.57.0"
   }
 }
