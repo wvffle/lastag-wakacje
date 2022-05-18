@@ -13,6 +13,14 @@ onMounted(() => {
 
 <template>
   <div class="text-gray-700 overflow-x-hidden">
+    <Head>
+      <Title>Poznaj wakacje w LASTAG-u</Title>
+      <Meta charset="utf-8" />
+      <Meta name="viewport" content="width=device-width, initial-scale=1" />
+      <Meta name="description" content="W Białymstoku zjawili się super niebezpieczni osobnicy i zagrażają bezpieczeństwu całego kraju! Aby uratować Białystok i akalice musimy wyszkolić szybko nowych agentów! Dlatego rozpoczynamy rekrutację do Lastagowej Akademii Tajnych Agentów! Zapisz swoje dziecko na najfajniejsze półkolonie w Białymstoku!" />
+      <Link rel="icon" type="image/x-icon" href="/logo.png" />
+    </Head>
+
     <header class="h-[140vh] md:h-screen relative bg-[#04c1f1]">
       <div data-aos="fade-up" class="absolute top-[calc(120vh-24rem)] md:top-[calc(100vh-24rem)] h-screen w-full bg-[#fce784]">
         <img data-aos="fade-down" data-aos-delay="1000" src="/palm-1.webp" class="absolute bottom-1/1 h-64 left-2/4 -transform-x-1/2" />
