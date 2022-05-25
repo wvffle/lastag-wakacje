@@ -9,6 +9,18 @@ const price = computed(() => new Date('2022-06-01') > new Date() ? 699 : 750)
 onMounted(() => {
   AOS.init()
 })
+
+;(function(w,d,s,l,i){
+  w[l] = w[l] || [];
+  w[l].push({
+    'gtm.start': new Date().getTime(),
+    event:'gtm.js'
+  });
+  var f = d.getElementsByTagName(s)[0], j = d.createElement(s) as HTMLScriptElement, dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src= 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window,document,'script','dataLayer','GTM-N9BL7TH');
 </script>
 
 <template>
@@ -139,7 +151,7 @@ onMounted(() => {
             uprawnienia,<br />
             ✔ Atrakcje – laserowy labirynt, fun climbing, lasertag, reflexroom, gry planszowe, konsole, kinect,
             animacje,<br />
-            ✔ Wyjście z lokalu np. kino,<br />
+            ✔ Wyjście z lokalu np. Fast Park,<br />
             ✔ Pełne wyżywienie – 3 posiłki – II śniadanie, obiad i podwieczorek, woda i herbata bez limitu,<br />
             ✔ Bilety na przejazdy komunikacją miejską,<br />
             ✔ Ubezpieczenie NNW,<br />
@@ -201,7 +213,7 @@ onMounted(() => {
               Dzieci mają ogromną potrzebę ruchu - tylko nie wszystkie po dwóch latach pandemii o tym pamiętają :)<br />
               Spokojnie - my im o tym przypomnimy :)
             </div>
-            <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-2 min-h-100">
+            <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-3 min-h-100 mb-4">
               <div class="absolute inset-0 overflow-y-scroll p-8">
                 <h4>Dzień 1 (poniedziałek)</h4>
                 <ul class="programme">
@@ -288,6 +300,13 @@ onMounted(() => {
                 </ul>
               </div>
             </div>
+            <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2 mb-4 lg:mb-0">
+              <h4 class="mb-2">Terminy turnusów</h4>
+              04.07.2022 -08.07.2022 - II turnus<br>
+              18.07.2022 - 22.07.2022 - IV turnus<br>
+              01.08.2022 - 05.08.2022 - VI turnus<br>
+              15.08.2022 - 19.08.2022 - VII turnus
+            </div>
             <div class="flex col-span-2">
               <polaroid src="/images/20210716_123802613_iOS.webp" class="w-64 rotate-15" />
               <polaroid src="/images/20210813_092035136_iOS.webp" class="w-64 -rotate-13" />
@@ -335,7 +354,7 @@ onMounted(() => {
               Poniżej prezentujemy spis wszystkich wyzwań.<br>
               Każde wyzwanie to niezapomniane wspomnienie dla młodego człowieka.
             </div>
-            <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-2 min-h-100">
+            <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-3 min-h-100 mb-4">
               <div class="absolute inset-0 overflow-y-scroll p-8">
                 <h4>Dzień 1 (poniedziałek)</h4>
                 <ul class="programme">
@@ -380,13 +399,11 @@ onMounted(() => {
                   <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
                   <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> zajęcia jogi z instruktorem </li>
-                  <li><span class="text-gray-400 text-xs">11:00</span> warsztaty tematyczne (malowanie techniką pouring) </li>
-                  <li><span class="text-gray-400 text-xs">13:00</span> obiad </li>
-                  <li><span class="text-gray-400 text-xs">13:30</span> kontynuacja warsztatów </li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek </li>
-                  <li><span class="text-gray-400 text-xs">15:45</span> rozgrywka LASTAG GAME </li>
-                  <li><span class="text-gray-400 text-xs">16:00</span> czas wolny na strefie animacji + atrakcje
+                  <li><span class="text-gray-400 text-xs">10:00</span> wyjście do Fast Park połączone z ogniskiem i
+                    pieczeniem kiełbasek na ognisku</li>
+                  <li><span class="text-gray-400 text-xs">14:30</span> podwieczorek</li>
+                  <li><span class="text-gray-400 text-xs">15:00</span> rozgrywka LASTAG GAME </li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + atrakcje
                     dostępne w lokalu itp. + rozjazd dzieci </li>
                 </ul>
 
@@ -395,11 +412,12 @@ onMounted(() => {
                   <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
                   <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> wyjście do Fast Park połączone z ogniskiem i
-                    pieczeniem kiełbasek na ognisku</li>
-                  <li><span class="text-gray-400 text-xs">14:30</span> podwieczorek</li>
-                  <li><span class="text-gray-400 text-xs">15:00</span> rozgrywka LASTAG GAME </li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + atrakcje
+                  <li><span class="text-gray-400 text-xs">10:00</span> warsztaty tematyczne (malowanie techniką pouring) </li>
+                  <li><span class="text-gray-400 text-xs">13:00</span> obiad </li>
+                  <li><span class="text-gray-400 text-xs">13:30</span> kontynuacja warsztatów </li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek </li>
+                  <li><span class="text-gray-400 text-xs">15:45</span> rozgrywka LASTAG GAME </li>
+                  <li><span class="text-gray-400 text-xs">16:00</span> czas wolny na strefie animacji + atrakcje
                     dostępne w lokalu itp. + rozjazd dzieci </li>
                 </ul>
 
@@ -418,6 +436,14 @@ onMounted(() => {
                     dostępne w lokalu itp. + rozjazd dzieci </li>
                 </ul>
               </div>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2 mb-4 lg:mb-0">
+              <h4 class="mb-2">Terminy turnusów</h4>
+              27.06.2022 - 01.07.2022 -  I turnus<br>
+              11.07.2022 - 15.07.2022 - III turnus<br>
+              25.07.2022 - 29.07.2022 - V turnus<br>
+              08.08.2022 - 12.08.2022 - VII turnus<br>
+              22.08.2022 - 26.08.2022 - IX turnus
             </div>
             <div class="flex col-span-2">
               <polaroid src="/images/20210716_123802613_iOS.webp" class="w-64 rotate-15" />
