@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import AOS from 'aos'
 
-const tabs = ['Sportowe Świrusy', 'Lastag Challenge']
+const tabs = ['CO JEST GRANE?!', 'PÓŁKOLONIE SUPER AKTYWNE']
 const tab = ref(tabs[0])
 
-const price = computed(() => new Date('2022-06-01') > new Date() ? 699 : 750)
+const price = computed(() => new Date('2022-06-01') > new Date() ? 699 : 730)
 
 onMounted(() => {
   AOS.init()
@@ -70,7 +70,7 @@ onMounted(() => {
               <div class="absolute transform rotate-6 rounded-md bg-[#1a86c7] w-full h-full shadow" />
               <div class="absolute transform rotate-3 rounded-md bg-[#fce784] w-full h-full shadow" />
               <div class="relative z-1 rounded-md overflow-hidden aspect-ratio-16/9 shadow">
-                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/aekQAEEVeqM?vq=hd1080"
+                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/os1QbjTPOME?vq=hd1080"
                   title="Wakacje w LASTAG-u" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen />
@@ -111,52 +111,41 @@ onMounted(() => {
           <div data-aos="zoom-out-up" data-aos-delay="100" class="col-span-2 bg-white rounded-md py-4 px-8 shadow-xl text-justify">
             <p class="pb-4 text-lg">
               <span class="text-xl text-center py-4 block">
-                W Białymstoku zjawili się super niebezpieczni osobnicy i zagrażają bezpieczeństwu całego kraju! 
+                Na te wakacje przygotowaliśmy DWA całkowicie nowe programy! Półkolonie SUPER AKTYWNE czyli <span class="text-[#1a86c7] font-bold">KOSMIECZNIE WIELKA DAWKA AKTYWNOŚCI</span> I SPORTU oraz półkolonie CO JEST GRANE? Czyli półkolonie z <span class="text-[#1a86c7] font-bold">NOCOWANIEM</span>!
               </span>
-              Nazywają się organizacja <span class="text-[#1a86c7] font-bold">Parasol</span>, słyną ze swojej przebiegłości i próbują przejąć kontrolę nad światem!
-              Jedynie <span class="text-[#1a86c7] font-bold">Tajna Agencja Szpiegowska Lastag</span> może ich powstrzymać – niestety wszyscy tajni agenci mają akurat
-              katar! <br><br>
-              <span class="text-sm block">
-                Aby uratować Białystok i akalice musimy wyszkolić szybko nowych agentów! 
-                Dlatego rozpoczynamy rekrutację do Lastagowej Akademii Tajnych Agentów! 
-                Zapisz swoje dziecko na <span class="text-[#1a86c7] font-bold">najfajniejsze półkolonie w Białymstoku</span>!
-              </span>
+              W naszym planie nie ma miejsca na nudę! My nie musimy nigdzie wychodzić bo atrakcje mamy cały czas na miejscu!
             </p>
 
-            <p class="pb-4 text-sm">
-              Do tego zadania poszukiwani są <span class="text-[#1a86c7] font-bold">NIEZWYKLE AMBITNI I ODWAŻNI</span> mali Tajni Agenci – dzieci w wieku od 7 do 13 roku
-              życia! <br />
-              W trakcie półkolonii, według całkowicie nowego programu <span class="text-[#1a86c7] font-bold">LASTAG CHALLENGE</span>, każdy agent będzie miał okazję
-              zmierzyć się z naszymi <span class="text-[#1a86c7] font-bold">WYZWANIAMI</span>! <br />
-              Za zaliczenie zadań, zarówno tych grupowych jak i indywidualnych przewidziane są <span class="text-[#1a86c7] font-bold">ODZNAKI</span>! Kto zdobędzie ich
-              najwięcej? <br />
-              O tym przekonamy się już po pierwszym turnusie!
+            <p class="pb-4 text-lg">
+              Oczywiście nie samą zabawą człowiek żyje. Na każdym turnusie realizować będziemy warsztaty kreatywne o różnej tematyce!
+            </p>
+
+            <p class="pb-4 text-lg">
+              W trakcie półkolonii musi być też na odrobinę edukacji ! Zaplanowaliśmy wycieczki z przewodnikiem w bardzo różne , nietypowe miejsca!
             </p>
 
             <p class="text-lg">
-              Oczywiście nie zapominamy o wartościach edukacyjnych. <br />
-              Na każdym turnusie realizować będziemy warsztaty kreatywne o różnej tematyce! Nie zapomnimy też o waszej
-              sprawności i kondycji. <br />
-              Każdego dnia czekać będą na nas atrakcje i warsztaty przygotowane przez naszą akademię.<br><br>
+              Nie zapomnimy też o waszej sprawności i kondycji. Każdego dnia czekać będą na nas atrakcje i warsztaty przygotowane przez naszą kadrę, gry i zabawy na świeżym powietrzu a także minimum dwa wyjścia z lokalu w trakcie każdego Turnusu! 
             </p>
 
             <div class="text-xl text-[#1a86c7] text-center py-4 block">
-            Podejmujesz wyzwanie?
+Podejmiesz nasze wyzwanie? Czy raczej boisz się tajemniczej zjawy?
             </div>
+            <p class="text-sm text-center">
+              Ps. Oczywiście telefony zostawiamy w domu lub specjalnym koszyku na recepcji !
+            </p>
           </div>
           <div data-aos="fade-left" data-aos-delay="300" class="text-white pt-8 md:pt-0">
             <h3 class="pb-4">W pakiecie:</h3>
             ✔ Bezpieczny wypoczynek, zarejestrowany w Kuratorium Oświaty,<br />
             ✔ Całodzienna opieka i zajęcia pod okiem wysoko wykwalifikowanej kadry, posiadającej odpowiednie
             uprawnienia,<br />
-            ✔ Atrakcje – laserowy labirynt, fun climbing, lasertag, reflexroom, gry planszowe, konsole, kinect,
-            animacje,<br />
-            ✔ Wyjście z lokalu np. Fast Park,<br />
-            ✔ Pełne wyżywienie – 3 posiłki – II śniadanie, obiad i podwieczorek, woda i herbata bez limitu,<br />
-            ✔ Bilety na przejazdy komunikacją miejską,<br />
-            ✔ Ubezpieczenie NNW,<br />
-            ✔ Warsztaty kreatywne,<br />
-            ✔ Pamiątkowe gadżety (dyplomy, koszulki, smycze).
+            ✔ Atrakcje w lokalu – laserowy labirynt, fun climbing, lasertag, reflexroom, gry planszowe, konsole, kinect, animacje, sprzęt sportowy, cymbergaj, piłkarzyki, itp. <br>
+            ✔ 2 wyjścia z lokalu np. basen lub kino / wycieczki edukacyjne – więcej informacji wkrótce. <br>
+            ✔ Pełne wyżywienie – 2 posiłki – II śniadanie, obiad, woda bez limitu<br />
+            ✔ Ubezpieczenie NNW<br />
+            ✔ Warsztaty kreatywne<br />
+            ✔ OSTATNI DZIEŃ TURNUSÓW I, III, V, VII – NOCOWANIE – PIDŻAMA PARTY (OD 18:00 DO 9:00)
           </div>
         </div>
 
@@ -180,132 +169,110 @@ onMounted(() => {
               Cena: {{ price }} zł
             </div>
             <div class="flex justify-end">
-              <a v-if="tab === 'Sportowe Świrusy'" href="https://lastag.pl/produkt/wakacje-2022/">
+              <a v-if="tab === 'CO JEST GRANE?!'" href="https://lastag.pl/produkt/wakacje-2023/">
                 <Button>KUP TERAZ</Button>
               </a>
-              <a v-if="tab === 'Lastag Challenge'" href="https://lastag.pl/produkt/wakacje-tajnych-agentow-2022/">
+              <a v-if="tab === 'PÓŁKOLONIE SUPER AKTYWNE'" href="https://lastag.pl/produkt/wakacje-2023-2/">
                 <Button>KUP TERAZ</Button>
               </a>
             </div>
           </div>
 
-          <div v-if="tab === 'Sportowe Świrusy'" class="lg:grid grid-cols-3 gap-8">
+          <div v-if="tab === 'CO JEST GRANE?!'" class="lg:grid grid-cols-3 gap-8">
             <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2 mb-4 lg:mb-0">
-              <div class="flex justify-center">
-                <img src="/sportowe-swirusy.webp" class="h-32 -translate-y-20 -mb-16" />
+              <div class="flex justify-center gap-8 -translate-y-26 -mb-22">
+                <img src="/co-jest-grane.png" class="h-64 opacity-30 duration-200 cursor-pointer hover:opacity-100" :class="{ '!opacity-100': tab === tabs[0] }" @click="tab = tabs[0]" />
+                <img src="/super-aktywne.png" class="h-64 opacity-30 duration-200 cursor-pointer hover:opacity-100" :class="{ '!opacity-100': tab === tabs[1] }" @click="tab = tabs[1]" />
               </div>
-              SPORTOWE ŚWIRUSY – to nasz nowy program półkolonii.<br /><br />
+              <h3>Zapisz swoje dziecko na najfajniejsze półkolonie w Białymstoku! TEGO JESZCZE NIE BYŁO! PÓŁKOLONIE – CO JEST GRANE ?! Z NOCOWANIEM!</h3><br /><br />
 
-              Opracowany został w oparciu o nasze doświadczenia zdobyte podczas codziennej pracy z dziećmi.<br />
-              Wyszliśmy z założenia, że każde dziecko jest inne i każde jest u nas z innego powodu, ale absolutnie
-              żadnemu
-              nie zaszkodzi ODROBINA RUCHU!<br /><br />
+              Na te wakacje stworzyliśmy całkowicie nowy program! Coś na co odważyliśmy się jak na razie tylko my! Półkolonie z nocowaniem! W naszym planie nie ma miejsca na nudę! My nie musimy nigdzie wychodzić bo atrakcje mamy cały czas na miejscu! <br> <br>
 
-              Dlatego tworząc ten program postawiliśmy na jeszcze większą ilość ruchu i aktywności fizycznej niż
-              zazwyczaj!<br />
-              Każdy dzień będziemy zaczynać rozgrzewką, mnóstwo zabaw na świeżym powietrzu oraz konkurencji
-              sportowych.<br />
-              Codziennie będziemy gościć trenerów zajmujących się różnymi dyscyplinami sportowymi.<br /><br />
+Oczywiście nie samą zabawą człowiek żyje. Na każdym turnusie realizować będziemy warsztaty kreatywne o różnej tematyce! <br> <br>
 
-              W LASTAG-u nie można się nudzić – to FAKT! Nasza misja polega na tym aby dawać Państwa pociechom jak
-              najlepsze wspomnienia!<br /><br />
+W trakcie półkolonii musi być też na odrobinę edukacji ! Zaplanowaliśmy wycieczki z przewodnikiem w bardzo różne , nietypowe miejsca! <br> <br>
 
-              Dzieci mają ogromną potrzebę ruchu - tylko nie wszystkie po dwóch latach pandemii o tym pamiętają :)<br />
-              Spokojnie - my im o tym przypomnimy :)
+Nie zapomnimy też o waszej sprawności i kondycji. Każdego dnia czekać będą na nas atrakcje i warsztaty przygotowane przez naszą kadrę, gry i zabawy na świeżym powietrzu a także minimum dwa wyjścia z lokalu w trakcie każdego Turnusu! Podejmiesz nasze wyzwanie❓Czy raczej boisz się tajemniczej zjawy? <br> <br>
+
+Ps. Oczywiście telefony zostawiamy w domu lub specjalnym koszyku na recepcji !
             </div>
             <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-3 min-h-100 mb-4">
               <div class="absolute inset-0 overflow-y-scroll p-8">
                 <h4>Dzień 1 (poniedziałek)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                   </li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> przedstawienie planu całego tygodnia oraz
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">09:30</span> przedstawienie planu całego tygodnia oraz
                     zapoznanie dzieci z regulaminem półkolonii.</li>
                   <li><span class="text-gray-400 text-xs">10:30</span> zapoznanie dzieci z atrakcjami i zasadami
                     korzystania z nich (lasertag, funclimbing, laserowy labirynt, reflexroom)</li>
-                  <li><span class="text-gray-400 text-xs">11:00</span> podzielenie dzieci na zespoły, nadawanie nazw
-                    drużynom </li>
-                  <li><span class="text-gray-400 text-xs">11:30</span> wizyta straży pożarnej wraz z pokazem
-                    specjalistycznego sprzętu oraz pogadanka o bezpieczeństwie (opcjonalnie wizyta policji lub straży
-                    miejskiej)</li>
-                  <li><span class="text-gray-400 text-xs">12:00</span> zabawy na atrakcjach dostępnych w lokalu w
-                    (lasertag, funclimbing, laserowy labirynt, reflexroom)</li>
-                  <li><span class="text-gray-400 text-xs">13:00</span> obiad</li>
-                  <li><span class="text-gray-400 text-xs">13:30</span> kontynuacja zabaw w lasertag, funclimbing,
-                    laserowy labirynt, reflexroom</li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek</li>
-                  <li><span class="text-gray-400 text-xs">15:45</span> czas wolny na strefie animacji + atrakcje
-                    dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">11:00</span> podzielenie dzieci na grupy </li>
+                  <li><span class="text-gray-400 text-xs">11:30</span> zabawa na atrakcjach dostępnych w lokalu (funclimbing, lasertag, reflexroom, labirynt)</li>
+                  <li><span class="text-gray-400 text-xs">14:00</span> obiad</li>
+                  <li><span class="text-gray-400 text-xs">14:30</span> Lastag Challenge (gry i zabawy ruchowe) </li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
 
                 <h4>Dzień 2 (wtorek)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> rozgrzewka sportowa + sportowy CHALLENGE DNIA
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">10:00</span> wycieczka edukacyjna*
                   </li>
-                  <li><span class="text-gray-400 text-xs">11:00</span> zajęcia z trenerem </li>
-                  <li><span class="text-gray-400 text-xs">12:00</span> warsztaty techniczne</li>
                   <li><span class="text-gray-400 text-xs">14:00</span> obiad </li>
-                  <li><span class="text-gray-400 text-xs">14:30</span> kontynuacja warsztatów</li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek</li>
-                  <li><span class="text-gray-400 text-xs">15:45</span> czas wolny na strefie animacji + atrakcje
-                    dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">14:30</span> zabawa na atrakcjach dostępnych w lokalu (funclimbing, lasertag, reflexroom, labirynt)</li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
 
                 <h4>Dzień 3 (środa)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> rozgrzewka sportowa + sportowy CHALLENGE DNIA
-                  </li>
-                  <li><span class="text-gray-400 text-xs">11:00</span> zajęcia z trenerem </li>
-                  <li><span class="text-gray-400 text-xs">12:00</span> warsztaty techniczne</li>
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">09:30</span> czas wolny na atrakcjach dostępnych w lokalu </li>
+                  <li><span class="text-gray-400 text-xs">10:00</span> wyjście do kina (repertuar wakacyjny nie jest jeszcze znany, czekamy na informacje)  </li>
                   <li><span class="text-gray-400 text-xs">14:00</span> obiad </li>
-                  <li><span class="text-gray-400 text-xs">14:30</span> kontynuacja warsztatów </li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek </li>
-                  <li><span class="text-gray-400 text-xs">15:45</span> czas wolny na strefie animacji + atrakcje
-                    dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">14:30</span> zabawa na atrakcjach dostępnych w lokalu (funclimbing, lasertag, reflexroom, labirynt)</li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
 
                 <h4>Dzień 4 (czwartek)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> wyjście do Fast Park połączone z ogniskiem i
-                    pieczeniem kiełbasek na ognisku</li>
-                  <li><span class="text-gray-400 text-xs">14:30</span> podwieczorek</li>
-                  <li><span class="text-gray-400 text-xs">14:45</span> czas wolny na strefie animacji + atrakcje
-                    dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">10:00</span> warsztaty techniczne (tworzenie własnych puzzli/gier planszowych/koraliki Pyssla)</li>
+                  <li><span class="text-gray-400 text-xs">14:00</span> obiad </li>
+                  <li><span class="text-gray-400 text-xs">14:30</span> zabawa na atrakcjach dostępnych w lokalu (funclimbing, lasertag, reflexroom, labirynt)</li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
 
                 <h4>Dzień 5 (piątek)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> rozgrzewka sportowa + sportowy CHALLENGE DNIA
-                  </li>
-                  <li><span class="text-gray-400 text-xs">11:00</span> zajęcia z trenerem </li>
-                  <li><span class="text-gray-400 text-xs">12:00</span> warsztaty techniczne</li>
-                  <li><span class="text-gray-400 text-xs">14.00</span> obiad </li>
-                  <li><span class="text-gray-400 text-xs">14:30</span> kontynuacja warsztatów </li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek </li>
-                  <li><span class="text-gray-400 text-xs">15:45</span> czas wolny na strefie animacji + atrakcje
-                    dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">09:30</span> czas wolny na atrakcjach dostępnych w lokalu. </li>
+                  <li><span class="text-gray-400 text-xs">11:00</span> Lastag Challenge (gry i zabawy ruchowe)  </li>
+                  <li><span class="text-gray-400 text-xs">13:00</span> obiad </li>
+                  <li><span class="text-gray-400 text-xs">13:30</span> impreza pożegnalna (wata cukrowa + tatuaże + bańki) </li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
+
+                <h4>*</h4>
+                <div class="text-xs"><strong>turnusy I i V</strong> „Czy w operze są upiory?” – wycieczka do Opery i Filharmonii Podlaskiej, zwiedzanie zaplecza</div>
+                <div class="text-xs"><strong>turnusy III i VII</strong> „Woda – skąd, dokąd i co dalej?” – wycieczka do oczyszczalni ścieków</div>
+                <div class="text-xs">Z przyczyn od nas niezależnych, kolejność wyjść może ulec zmianie lub wyjście zostanie przesunięte na inny dzień tygodnia.</div>
               </div>
             </div>
             <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2 mb-4 lg:mb-0">
               <h4 class="mb-2">Terminy turnusów</h4>
-              04.07.2022 -08.07.2022 - II turnus<br>
-              18.07.2022 - 22.07.2022 - IV turnus<br>
-              01.08.2022 - 05.08.2022 - VI turnus<br>
-              15.08.2022 - 19.08.2022 - VII turnus
+              26.06.2023 - 30.06.2023 - I turnus<br>
+              10.07.2023 - 14.07.2023 - III turnus<br>
+              24.07.2023 - 28.07.2023 - V turnus<br>
+              07.08.2023 - 11.08.2023 - VII turnus
             </div>
             <div class="flex col-span-2">
               <polaroid src="/images/20210716_123802613_iOS.webp" class="w-64 rotate-15" />
@@ -314,136 +281,103 @@ onMounted(() => {
               <polaroid src="/images/20210713_082106015_iOS.webp" class="w-64 -rotate-17" />
             </div>
           </div>
-          <div v-if="tab === 'Lastag Challenge'" class="lg:grid grid-cols-3 gap-8">
+          <div v-if="tab === 'PÓŁKOLONIE SUPER AKTYWNE'" class="lg:grid grid-cols-3 gap-8">
             <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2 mb-4 lg:mb-0">
-              <div class="flex justify-center">
-                <img src="/lastag-challenge.webp" class="h-48 -translate-y-26 -mb-22" />
+              <div class="flex justify-center gap-8 -translate-y-26 -mb-22">
+                <img src="/co-jest-grane.png" class="h-64 opacity-30 duration-200 cursor-pointer hover:opacity-100" :class="{ '!opacity-100': tab === tabs[0] }" @click="tab = tabs[0]" />
+                <img src="/super-aktywne.png" class="h-64 opacity-30 duration-200 cursor-pointer hover:opacity-100" :class="{ '!opacity-100': tab === tabs[1] }" @click="tab = tabs[1]" />
               </div>
-              LASTAG CHALLENGE – to nasz nowy program półkolonii.<br><br>
+              <h3>PÓŁKOLONIE SUPER AKTYWNE – KOSMICZNIE WIELKA DAWKA AKTYWNOŚCI I SPORTU</h3> <br><br>
 
-              Opracowany został w oparciu o nasze doświadczenia zdobyte podczas codziennej pracy z dziećmi.<br>
-              Wyszliśmy z założenia, że każde dziecko jest inne i każde jest u nas z innego powodu.<br><br>
+              
+Jeżeli uważasz, że twojemu dziecku przydało by się trochę ruchu… albo po prostu ma bardzo DUŻO energii i fajnie by było, żeby się wyszalało przed powrotem do domu <br>
+              <h4>TO DOBRZE TRAFIŁEŚ!</h4> <br>
+Półkolonie super aktywne czyli kosmicznie wielka dawka aktywności i sportu to nasz pomysł na wakacyjną nudę. Dużo ruchu! Gry i zabawy na świeżym powietrzu! Codzienna poranny trening! Dużo różnych dyscyplin sportowych! Treningi z zawodnikami futbolu amerykańskiego z Lowlanders Białystok oraz baseball-u z Lisami Białystok! Gry, zabawy i drużynowa rywalizacja! <br><br>
+Zapisz swoje dziecko na najbardziej aktywne półkolonie w naszej galaktyce !  <br><br>
 
-              Dlatego postanowiliśmy na jeszcze większą różnorodność! Jeszcze więcej zabawy! Jeszcze więcej kreatywności!
-              I nic na siłę! To brzmi jak chaos? A my mówimy owszem ale uporządkowany!<br><br>
+Przygotujcie się na kosmiczne combo!  <br><br>
 
-              W LASTAG-u nie można się nudzić – to FAKT!<br>
-              Nasza misja polega na tym aby dawać Państwa pociechom jak najlepsze wspomnienia!
-              Dlatego zaangażowaliśmy sztab wybitnych naukowców aby opracowali nam 54 dowody na to iż w LASTAG-u nie można
-              się nudzić! Dając dzieciom wyzwania na miarę ich umiejętności budujemy w nich poczucie sukcesu, chęć działania i miłość
-              do pracy.<br><br>
+Marzy Ci się aby dziecko wróciło do domu i padło ze zmęczenia? Nie zwlekaj, zapisz swoje dziecko już dziś! Ilość miejsc ograniczona! <br><br>
 
-              Dzieci mają ogromną potrzebę ruchu.<br>
-              Zadziwiające jest, jak szybko dziecko posadzone przed telewizor, komputer lub tablet traci zainteresowanie
-              otaczającym go światem i zastyga niemalże bez ruchu na długi czas.<br>
-              A na to nie możemy sobie pozwolić!<br><br>
-
-              Na tym turnusie postaramy się aby Państwa dzieci stały się trochę bardziej dziećmi i podkręcimy lekko ich
-              ciekawość świata!<br>
-              Formuła lastag challenge polega na wprowadzeniu elementu grywalizacji pomiędzy grupami podczas całego
-              turnusu.<br><br>
-
-              Będą dyscypliny drużynowe oraz indywidualne.<br>
-              Każdego dnia będziemy mieli inną konkurencję obowiązkową (LASTAG GAME) oraz konkurencje do wyboru!
-              Jeżeli ktoś nie będzie chciał brać udziału w jednych warsztatach to będzie mógł się zająć czymś innym.<br><br>
-
-              Aby dodatkowo podkręcić atmosferę dzieci nie będą konkurować o pietruszkę! Gra będzie się odbywać o dość
-              wysoką stawkę (ok 10 kg cukierków), vouchery do LASTAG-u lub o złotą kartę LASTAG-u czyli pół roku korzystania z atrakcji lastag-u gratis*!<br><br>
-
-              Dodatkowo dzieci będą nagradzane odznakami za wypełnianie naszych CHALLENGE-ów!<br>
-              Poniżej prezentujemy spis wszystkich wyzwań.<br>
-              Każde wyzwanie to niezapomniane wspomnienie dla młodego człowieka.
+Ps. Oczywiście telefony zostawiamy w domu lub specjalnym koszyku na recepcji!
             </div>
             <div class="bg-white rounded-xl shadow-xl relative overflow-hidden row-span-3 min-h-100 mb-4">
               <div class="absolute inset-0 overflow-y-scroll p-8">
                 <h4>Dzień 1 (poniedziałek)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                   </li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> przedstawienie planu całego tygodnia oraz
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">09:30</span> przedstawienie planu całego tygodnia oraz
                     zapoznanie dzieci z regulaminem półkolonii.</li>
                   <li><span class="text-gray-400 text-xs">10:30</span> zapoznanie dzieci z atrakcjami i zasadami
                     korzystania z nich (lasertag, funclimbing, laserowy labirynt, reflexroom)</li>
-                  <li><span class="text-gray-400 text-xs">11:00</span> podzielenie dzieci na zespoły, nadawanie nazw
-                    drużynom </li>
-                  <li><span class="text-gray-400 text-xs">11:30</span> wizyta straży pożarnej wraz z pokazem
-                    specjalistycznego sprzętu oraz pogadanka o bezpieczeństwie (opcjonalnie wizyta policji lub straży
-                    miejskiej)</li>
-                  <li><span class="text-gray-400 text-xs">12:00</span> zabawy na atrakcjach dostępnych w lokalu w
-                    (lasertag, funclimbing, laserowy labirynt, reflexroom)</li>
-                  <li><span class="text-gray-400 text-xs">13:00</span> obiad</li>
-                  <li><span class="text-gray-400 text-xs">13:30</span> kontynuacja zabaw w lasertag, funclimbing,
-                    laserowy labirynt, reflexroom</li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek</li>
-                  <li><span class="text-gray-400 text-xs">15:45</span> rozgrywka LASTAG GAME </li>
-                  <li><span class="text-gray-400 text-xs">16:00</span> czas wolny na strefie animacji + atrakcje dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">11:00</span> podzielenie dzieci na grupy </li>
+                  <li><span class="text-gray-400 text-xs">11:30</span> warsztaty – wykonanie drużynowych koszulek</li>
+                  <li><span class="text-gray-400 text-xs">14:00</span> obiad</li>
+                  <li><span class="text-gray-400 text-xs">14:30</span> zabawa na atrakcjach dostępnych w lokalu (funclimbing, lasertag, reflexroom, labirynt) </li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
 
                 <h4>Dzień 2 (wtorek)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> wyjście Jumper Park </li>
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">10:00</span>  wyjście na trening z drużyną LOWLANDERS (futbol amerykański)
+                  </li>
                   <li><span class="text-gray-400 text-xs">14:00</span> obiad </li>
-                  <li><span class="text-gray-400 text-xs">14:30</span> zajęcia kreatywne (robienie bransoletek, koraliki pyssla) </li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek</li>
-                  <li><span class="text-gray-400 text-xs">15:45</span> rozgrywka LASTAG GAME </li>
-                  <li><span class="text-gray-400 text-xs">16:00</span> czas wolny na strefie animacji + atrakcje
-                    dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">14:30</span> zabawa na atrakcjach dostępnych w lokalu (funclimbing, lasertag, reflexroom, labirynt)</li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
 
                 <h4>Dzień 3 (środa)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> wyjście do Fast Park połączone z ogniskiem i
-                    pieczeniem kiełbasek na ognisku</li>
-                  <li><span class="text-gray-400 text-xs">14:30</span> podwieczorek</li>
-                  <li><span class="text-gray-400 text-xs">15:00</span> rozgrywka LASTAG GAME </li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + atrakcje
-                    dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">09:30</span> czas wolny na atrakcjach dostępnych w lokalu </li>
+                  <li><span class="text-gray-400 text-xs">10:00</span> wyjście na basen </li>
+                  <li><span class="text-gray-400 text-xs">14:00</span> obiad </li>
+                  <li><span class="text-gray-400 text-xs">14:30</span> zabawa na atrakcjach dostępnych w lokalu (funclimbing, lasertag, reflexroom, labirynt)</li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
 
                 <h4>Dzień 4 (czwartek)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> warsztaty tematyczne (malowanie techniką pouring) </li>
-                  <li><span class="text-gray-400 text-xs">13:00</span> obiad </li>
-                  <li><span class="text-gray-400 text-xs">13:30</span> kontynuacja warsztatów </li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek </li>
-                  <li><span class="text-gray-400 text-xs">15:45</span> rozgrywka LASTAG GAME </li>
-                  <li><span class="text-gray-400 text-xs">16:00</span> czas wolny na strefie animacji + atrakcje
-                    dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">10:00</span> wyjście na trening z drużyną LISY BIAŁYSTOK (drużyna baseballowa)</li>
+                  <li><span class="text-gray-400 text-xs">14:00</span> obiad </li>
+                  <li><span class="text-gray-400 text-xs">14:30</span> seans filmowy</li>
+                  <li><span class="text-gray-400 text-xs">15:30</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
 
                 <h4>Dzień 5 (piątek)</h4>
                 <ul class="programme">
-                  <li><span class="text-gray-400 text-xs">07:30</span> przyjazd dzieci + czas wolny na strefie animacji
+                  <li><span class="text-gray-400 text-xs">07:00</span> przyjazd dzieci + czas wolny na strefie animacji
                     + atrakcje dostępne w lokalu</li>
-                  <li><span class="text-gray-400 text-xs">09:30</span> II śniadanie</li>
-                  <li><span class="text-gray-400 text-xs">10:00</span> podsumowanie zdobytych odznaczeń, rozdanie nagród i dyplomów  </li>
-                  <li><span class="text-gray-400 text-xs">11:00</span> warsztaty techniczne</li>
-                  <li><span class="text-gray-400 text-xs">13.00</span> obiad </li>
-                  <li><span class="text-gray-400 text-xs">14:00</span> zabawa na atrakcjach dostępnych w lokalu </li>
-                  <li><span class="text-gray-400 text-xs">15:30</span> podwieczorek </li>
-                  <li><span class="text-gray-400 text-xs">15:45</span> FINAŁ LASTAG GAME </li>
-                  <li><span class="text-gray-400 text-xs">16:00</span> czas wolny na strefie animacji + atrakcje
-                    dostępne w lokalu itp. + rozjazd dzieci </li>
+                  <li><span class="text-gray-400 text-xs">09:00</span> II śniadanie</li>
+                  <li><span class="text-gray-400 text-xs">09:30</span> czas wolny na atrakcjach dostępnych w lokalu. </li>
+                  <li><span class="text-gray-400 text-xs">11:00</span> test wiedzy na temat sportów, które odbyły się na turnusie + wyłonienie najlepszej Lastagowej drużyny + rozdanie nagród.  </li>
+                  <li><span class="text-gray-400 text-xs">13:00</span> obiad </li>
+                  <li><span class="text-gray-400 text-xs">13:30</span> impreza pożegnalna (wata cukrowa + tatuaże + bańki) </li>
+                  <li><span class="text-gray-400 text-xs">15:00</span> czas wolny na strefie animacji + rozjazd dzieci </li>
                 </ul>
+
+                <h4>*</h4>
+                <div class="text-xs"><strong>turnusy I i V</strong> „Czy w operze są upiory?” – wycieczka do Opery i Filharmonii Podlaskiej, zwiedzanie zaplecza</div>
+                <div class="text-xs"><strong>turnusy III i VII</strong> „Woda – skąd, dokąd i co dalej?” – wycieczka do oczyszczalni ścieków</div>
+                <div class="text-xs">Z przyczyn od nas niezależnych, kolejność wyjść może ulec zmianie lub wyjście zostanie przesunięte na inny dzień tygodnia.</div>
               </div>
             </div>
             <div class="bg-white p-8 rounded-xl shadow-xl z-2 col-span-2 mb-4 lg:mb-0">
               <h4 class="mb-2">Terminy turnusów</h4>
-              27.06.2022 - 01.07.2022 -  I turnus<br>
-              11.07.2022 - 15.07.2022 - III turnus<br>
-              25.07.2022 - 29.07.2022 - V turnus<br>
-              08.08.2022 - 12.08.2022 - VII turnus<br>
-              22.08.2022 - 26.08.2022 - IX turnus
+              03.07.2022 - 07.07.2022 -  II turnus<br>
+              17.07.2022 - 21.07.2022 - IV turnus<br>
+              31.07.2022 - 04.08.2022 - VI turnus<br>
+              21.08.2022 - 25.08.2022 - VIII turnus<br>
             </div>
             <div class="flex col-span-2">
               <polaroid src="/images/20210716_123802613_iOS.webp" class="w-64 rotate-15" />

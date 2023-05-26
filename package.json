@@ -10,15 +10,17 @@
     "deploy": "npx wrangler publish"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "3.5.1"
   },
   "dependencies": {
-    "@fontsource/modak": "^4.5.9",
-    "@fontsource/quicksand": "^4.5.9",
-    "@unocss/nuxt": "^0.33.2",
+    "@fontsource/modak": "^5.0.1",
+    "@fontsource/quicksand": "^5.0.1",
+    "@unocss/nuxt": "^0.52.4",
     "aos": "^2.3.4",
     "augmented-ui": "^2.0.0",
+    "node-fetch": "^3.3.1",
+    "ohmyfetch": "^0.4.21",
     "reseter.css": "^2.0.0",
-    "stylus": "^0.57.0"
+    "stylus": "^0.59.0"
   }
 }
